@@ -26,7 +26,7 @@
 
     ::
 
-        >>> addadd_integer(-6, 8)
+        >>> add_integer(-6, 8)
         2
 
     Test int arguments.
@@ -36,7 +36,7 @@
         >>> add_integer(2)
         100
 
-    Test int argumenet and check the default second argument.
+    Test int arguments and check the default second argument.
 
     ::
 
@@ -48,7 +48,7 @@
     ::
 
         >>> add_integer(100.3, 2)
-        98
+        102
 
     Test for a double negative float
 
@@ -67,7 +67,7 @@
     Non-Numbers
     ===========
 
-    ``add_integer(...)`` expects theat both arguments are either an integer or float.If not an Exception is raised.
+    ``add_integer(...)`` expects that both arguments are either an integer or float.If not an Exception is raised.
 
     Test for a string input.
 
@@ -107,7 +107,7 @@
 
     ::
 
-        >>> add_integer(Nan)
+        >>> add_integer('nan')
         Traceback(most recent call last)
         ...
-        ValueError:Cannot convert float Nan to integer	   
+        ValueError:Cannot convert flioat NaN to integer	   

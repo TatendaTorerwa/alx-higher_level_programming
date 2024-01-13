@@ -14,6 +14,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     Base.metadata.create_all(engine)
-    status = session.query(State).filter(State.name.like('%a%')).first()
-    session.delete(instance)
+    state = session.query(State).filter(State.name.like('%a%')).first()
+    session.delete(state)
     session.commit()

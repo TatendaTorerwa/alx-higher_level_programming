@@ -21,3 +21,5 @@ if [[ -z $content_length ]]; then
 else
   echo "Size of the response body: $content_length bytes"
 fi
+
+echo "$content_length"
